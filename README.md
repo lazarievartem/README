@@ -1,5 +1,6 @@
 # README
 A place where I experiment.
+
 def disemvowel_trolls(sentence: str) -> str:
     vowels = "aeiouAEIOU"
     result = ""
