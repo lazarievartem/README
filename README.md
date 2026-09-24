@@ -1,14 +1,12 @@
 # README
 A place where I experiment.
 
-def disemvowel_trolls(sentence: str) -> str:
-    vowels = "aeiouAEIOU"
-    result = ""
-    for letter in sentence:
-        if letter not in vowels:
-            result += letter
-    return result
+def square_color(string: str, rank: int) -> str:
+    # write your code here
 
 
-disemvowel_trolls("Delete all vowels!") == "Dlt ll vwls!"
-disemvowel_trolls("QWERTY") == "QWRTY"
+
+
+Square_color("a", 8) # повертає "white"
+Square_color("b", 2) # повертає "black"
+Square_color("f", 5) # повертає "white"
