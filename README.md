@@ -11,4 +11,4 @@ def disemvowel_trolls(sentence: str) -> str:
 
 
 disemvowel_trolls("Delete all vowels!") == "Dlt ll vwls!"
-disemvowel_trolls("QWERTY") == "QWRTY"
+disemvowel_trolls("QWERTY") == "QWRTY",
