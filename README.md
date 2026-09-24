@@ -1,12 +1,12 @@
 # README
 A place where I experiment.
 
-def square_color(string: str, rank: int) -> str:
-    # write your code here
+def temperature(value):
 
-
-
-
-Square_color("a", 8) # повертає "white"
-Square_color("b", 2) # повертає "black"
-Square_color("f", 5) # повертає "white"
+    if value < 20:
+        return "Cold"
+    elif value >= 20 and value <= 50:
+        return "Warm"
+    else: 
+        return "Hot"
+temperature(39)
