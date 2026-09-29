@@ -17,5 +17,5 @@ def get_order(order: str) -> str:
         count = order.count(i)
         for _ in range(count):
             result.append(i.capitalize())
-    return " ".join(result)
+    return " ".join(result).
 
