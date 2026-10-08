@@ -1,13 +1,26 @@
 # README
 A place where I experiment.
 
-import random
+def weekday_order(weekday: str) -> int:
+    if weekday == "Monday":
+        return 0
+    if weekday == "Tuesday":
+        return 1
+    if weekday == "Wednesday":
+        return 2
+    if weekday == "Thursday":
+        return 3
+    if weekday == "Friday":
+        return 4
+    if weekday == "Saturday":
+        return 5
+    if weekday == "Sunday":
+        return 6
 
-def generate_random_list(min_value: int, max_value: int, length: int) -> list:
-    final_list = []
-    for i in range(length):
-        number = random.randint(min_value, max_value)
-        final_list.append(number)
-    print(final_list)
-    return final_list
+def sort_weekdays(weekdays: list) -> list:
+    sorted_weekdays = sorted(weekdays, key=weekday_order)
+    return sorted_weekdays
+
+sort_weekdays(["Monday"]) # ["Monday"]
+sort_weekdays(["Saturday", "Wednesday"]) # ["Wednesday", "Saturday"]
 
